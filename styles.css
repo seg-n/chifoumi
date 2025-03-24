@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  color: black;
+  background-image: linear-gradient(
+    rgb(212, 149, 149),
+    rgb(243, 243, 177),
+    rgb(212, 149, 149)
+  );
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#btn {
+  background-color: rgb(206, 138, 138);
+  padding: 10px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.div1,
+.div2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  left: -20px;
+  position: relative;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 40%;
+  max-height: 700px;
+  border-radius: 20px;
+  box-shadow: rgb(177, 177, 185) 5px 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 20px;
+}
+
+button {
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(238, 183, 183);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(206, 138, 138);
+}
+
+#trivia {
+  text-align: center;
+  background-color: rgb(233, 200, 200);
+  min-height: 80px;
+  max-width: 80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+}
+
+#result {
+  color: rgb(185, 148, 148);
+  text-shadow: 2px 2px 5px rgb(168, 133, 133);
+  font-size: 30px;
+}
+
+.divider {
+  padding: 40px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 40px;
+    padding: 8px;
+  }
+
+  #trivia {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .logos {
+    margin: 15px 0;
+  }
+
+  .score {
+    flex-direction: column;
+  }
+
+  .choices {
+    flex-direction: column;
+  }
+
+  #result {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 35px;
+    padding: 6px;
+  }
+
+  #trivia {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+.wins {
+  color: rgb(106, 141, 129);
+}
+
+.losses {
+  color: rgb(170, 99, 99);
+}
+
+.ties {
+  color: rgb(96, 96, 197);
+}
